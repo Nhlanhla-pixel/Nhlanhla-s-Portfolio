@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: lavenderblush;
+              border: 2px solid #fff;
+               padding: 30px;
+            font-size: 18px;
+            border-radius: 4px;
+            margin: 30px ;
+           /* margin-top: 10px;*/
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* /*line-height: 1.5; */
+           
+        }
+    
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .P1{
+            font-size: 25px;
+            padding: 30px;
+          
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;}
+    
+        .learn-more {
+            display: block;
+            margin-top: 20px;
+            /*this is the space on top*/
+            text-decoration: none;
+            color: blue;
+             padding: 20px;
+             font-size: 15px;
+    
+        }
+    
+        .learn-more:hover {
+            /*what happens when we move arounf the link??*/
+            text-decoration: underline;
+           
+    
+        }
+    
+        button {
+            display: block;
+            margin: 20px auto;
+            color: aliceblue;
+            background:#6643b5;
+            font-size: 40px;
+            padding: 15px 120px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 10px rgb(0, 0, 0, 0.1);
+        }
+    
+        button:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    
+        .footer {
+            text-align: center;
+        }
+    
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background:linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        hr{
+             margin-inline: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I love yogurt</h1>
+        <h2>Especially Greek Yogurt</h2>
+        <hr/>
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/05/shutterstock_518824723.jpg?w=1200"
+            alt="Greek Yogurt" width="300" />
+            <hr/>
+        <p class="P1">
+            Strained yogurt, <strong>Greek yogurt</strong>, yogurt cheese, sack yogurt, or kerned yogurt is yogurt that has been strained to
+            remove
+            most of its whey, resulting in a thicker consistency than normal unstrained yogurt, while still preserving the
+            distinctive sour taste of yogurt. Like many types, strained yogurt is often made from milk enriched by boiling
+            off some
+            water content, or by adding extra butterfat and powdered milk. In Europe and North America, it is often made
+            from
+            low-fat or fat-free cow's milk. In Iceland, a similar product named <em>skyr</em> is made.
+    
+            
+    
+        </p>
+      
+        <a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank" class="learn-more">
+            Learn more on Wikipedia
+        </a>
+    
+        <button class="buy-button">
+            Try Greek Yogurt
+        </button>
+        <br />
+        <p class="footer">
+            This page was built by Nhlanhla Karen Ndlovu
+        </p>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+           
+            
+            /*what if there was no name enterd , then what?*/
+            if (name.length > 0) {
+                alert("Thank you, " + name + "! We will be in touch by email, meanwhile have a lot of Yogurt! " );
+            }
+            else {
+                alert("No name,no Greek Yogurt for you!");
+            }
+        }
+        let Bybutton = document.querySelector(".buy-button");
+        Bybutton.addEventListener("click", buy);
+    </script>
+</body>
+</html>
